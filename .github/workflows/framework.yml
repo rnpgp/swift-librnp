@@ -19,7 +19,7 @@ env:
 
 jobs:
   build-framework:
-    runs-on: macos-14
+    runs-on: macos-15
     steps:
     - name: Checkout swift-rnp
       uses: actions/checkout@v7

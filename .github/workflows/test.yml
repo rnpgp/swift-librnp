@@ -31,7 +31,7 @@ jobs:
       fail-fast: false
       matrix:
         rnp: ${{ fromJson(needs.prepare.outputs.matrix) }}
-    runs-on: macos-14
+    runs-on: macos-15
     steps:
     - name: Drop untrusted preinstalled taps
       run: brew untap aws/tap 2>/dev/null || true
